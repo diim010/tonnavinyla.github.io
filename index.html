@@ -4,13 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tonna Vinyla</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/common.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/css/uikit.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.22/dist/js/uikit-icons.min.js"></script>
 </head>
 <body>
-    <h1>Tonna Vinyla</h1>
+    <header>
+        <nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-navbar-left">
+                <a class="uk-navbar-item uk-logo" href="#">Tonna Vinyla</a>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="uk-margin-top">
+        <section class="hero-section">
+            <div class="hero-section__video">
+                <video autoplay muted loop uk-video="autoplay: true; muted: true; loop: true;">
+                    <source src="img/VID.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="hero-section__container uk-container">
+                <div class="hero-section__content" uk-scrollspy="cls: uk-animation-fade; delay: 300;">
+                    <h1>Welcome to Tonna Vinyla</h1>
+                    <p>Your one-stop shop for vinyl records.</p>
+                    <p>lorem1000</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="uk-section">
+            <h2>About Us</h2>
+            <p>Tonna Vinyla is dedicated to providing the best selection of vinyl records from all genres. Whether you're a collector or just starting out, we have something for everyone.</p>
+        </section>
+    </main>
+    <footer>
+        <div class="uk-section uk-section-secondary uk-light">
+            <div class="uk-container">
+                <p>&copy; 2023 Tonna Vinyla. All rights reserved.</p>
+                <ul class="uk-subnav uk-subnav-divider">
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

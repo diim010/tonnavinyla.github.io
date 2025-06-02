@@ -1,0 +1,31 @@
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  overflow: hidden;
+  &__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    opacity: 0.5; // Adjust opacity for the video background
+  }
+  &__content {
+    text-align: center;
+    z-index: 21;
+    padding: 30px 20px;
+    background: rgba(0, 0, 0, 0.5); // Semi-transparent background for readability
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    );
+  }
+  
+}
