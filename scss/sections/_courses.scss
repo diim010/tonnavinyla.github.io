@@ -1,0 +1,24 @@
+.courses-section {
+    margin-top: 50px;
+    .course {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        &__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h3 {
+                font-size: 44px;
+                color: var(--primary-color);
+                margin-bottom: 10px;
+            }
+        }
+        &__pic {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
