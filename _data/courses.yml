@@ -1,0 +1,27 @@
+- title: "Beatmaking"
+  description: "Master the fundamentals of creating beats and rhythm patterns using modern digital audio workstations and classic drum machines."
+  image: "beat1.jpg"
+  alt: "Beatmaking Course"
+  animation_pic: "uk-animation-slide-left"
+  animation_content: "uk-animation-slide-right"
+  delay_pic: 1300
+  delay_content: 1100
+
+- title: "Scratch"
+  description: "Develop advanced turntable scratching techniques and learn the art of vinyl manipulation from industry professionals."
+  image: "course-2.jpg"
+  alt: "Scratch Course"
+  animation_pic: "uk-animation-slide-right"
+  animation_content: "uk-animation-slide-left"
+  delay_pic: 700
+  delay_content: 900
+  reverse_layout: true
+
+- title: "DJ"
+  description: "Build comprehensive DJ skills including mixing, beatmatching, and crowd reading for professional performances."
+  image: "course-3.jpg"
+  alt: "DJ Course"
+  animation_pic: "uk-animation-slide-left"
+  animation_content: "uk-animation-slide-right"
+  delay_pic: 500
+  delay_content: 300

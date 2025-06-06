@@ -1,0 +1,75 @@
+<section id="contact" class="contact-section uk-section">
+    <div class="uk-container">
+        <h2 class="uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 300;">Visit Our Studio</h2>
+        <div class="uk-grid-large" uk-grid>
+            <div class="uk-width-1-2@m">
+                <div class="contact-info" uk-scrollspy="cls: uk-animation-slide-left; delay: 500;">
+                    <h3>Contact Information</h3>
+                    <div class="contact-item uk-margin-medium">
+                        <span uk-icon="icon: location; ratio: 1.2" class="uk-margin-small-right"></span>
+                        <div>
+                            <strong>Address:</strong><br>
+                            {{ site.data.contact.address.street }}<br>
+                            {{ site.data.contact.address.city }}, {{ site.data.contact.address.state }} {{ site.data.contact.address.zip }}<br>
+                            {{ site.data.contact.address.country }}
+                        </div>
+                    </div>
+                    <div class="contact-item uk-margin-medium">
+                        <span uk-icon="icon: phone; ratio: 1.2" class="uk-margin-small-right"></span>
+                        <div>
+                            <strong>Phone:</strong><br>
+                            <a href="tel:{{ site.data.contact.phone }}">{{ site.data.contact.phone }}</a>
+                        </div>
+                    </div>
+                    <div class="contact-item uk-margin-medium">
+                        <span uk-icon="icon: mail; ratio: 1.2" class="uk-margin-small-right"></span>
+                        <div>
+                            <strong>Email:</strong><br>
+                            <a href="mailto:{{ site.data.contact.email }}">{{ site.data.contact.email }}</a>
+                        </div>
+                    </div>
+                    <div class="social-links uk-margin-medium-top">
+                        <a href="{{ site.data.contact.social.facebook }}" class="uk-icon-button uk-margin-small-right" uk-icon="facebook"></a>
+                        <a href="{{ site.data.contact.social.instagram }}" class="uk-icon-button uk-margin-small-right" uk-icon="instagram"></a>
+                        <a href="{{ site.data.contact.social.twitter }}" class="uk-icon-button" uk-icon="twitter"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-width-1-2@m">
+                <div class="studio-hours" uk-scrollspy="cls: uk-animation-slide-right; delay: 700;">
+                    <h3>Studio Hours</h3>
+                    <div class="hours-list">
+                        <div class="hours-item uk-flex uk-flex-between">
+                            <span>Monday:</span>
+                            <span>{{ site.data.contact.hours.monday }}</span>
+                        </div>
+                        <div class="hours-item uk-flex uk-flex-between">
+                            <span>Tuesday:</span>
+                            <span>{{ site.data.contact.hours.tuesday }}</span>
+                        </div>
+                        <div class="hours-item uk-flex uk-flex-between">
+                            <span>Wednesday:</span>
+                            <span>{{ site.data.contact.hours.wednesday }}</span>
+                        </div>
+                        <div class="hours-item uk-flex uk-flex-between">
+                            <span>Thursday:</span>
+                            <span>{{ site.data.contact.hours.thursday }}</span>
+                        </div>
+                        <div class="hours-item uk-flex uk-flex-between">
+                            <span>Friday:</span>
+                            <span>{{ site.data.contact.hours.friday }}</span>
+                        </div>
+                        <div class="hours-item uk-flex uk-flex-between">
+                            <span>Saturday:</span>
+                            <span>{{ site.data.contact.hours.saturday }}</span>
+                        </div>
+                        <div class="hours-item uk-flex uk-flex-between">
+                            <span>Sunday:</span>
+                            <span>{{ site.data.contact.hours.sunday }}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

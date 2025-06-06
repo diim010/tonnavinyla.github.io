@@ -1,0 +1,75 @@
+featured_albums:
+  - title: "Kind of Blue"
+    artist: "Miles Davis"
+    year: 1959
+    genre: "Jazz"
+    label: "Columbia Records"
+    condition: "Near Mint"
+    price: "$45.00"
+    image: "vinyl-kind-of-blue.jpg"
+    description: "Seminal modal jazz masterpiece featuring legendary performances from Miles Davis, John Coltrane, and Bill Evans."
+    rarity: "high"
+
+  - title: "The Chronic"
+    artist: "Dr. Dre"
+    year: 1992
+    genre: "Hip-Hop"
+    label: "Death Row Records"
+    condition: "Very Good Plus"
+    price: "$65.00"
+    image: "vinyl-chronic.jpg"
+    description: "Groundbreaking West Coast hip-hop album that defined G-funk and launched multiple careers."
+    rarity: "high"
+
+  - title: "Unknown Pleasures"
+    artist: "Joy Division"
+    year: 1979
+    genre: "Post-Punk"
+    label: "Factory Records"
+    condition: "Excellent"
+    price: "$35.00"
+    image: "vinyl-unknown-pleasures.jpg"
+    description: "Influential post-punk debut featuring the iconic pulsar wave cover design."
+    rarity: "medium"
+
+  - title: "Illmatic"
+    artist: "Nas"
+    year: 1994
+    genre: "Hip-Hop"
+    label: "Columbia Records"
+    condition: "Near Mint"
+    price: "$40.00"
+    image: "vinyl-illmatic.jpg"
+    description: "Critically acclaimed debut that established Nas as one of hip-hop's premier lyricists."
+    rarity: "medium"
+
+genres:
+  - name: "Hip-Hop"
+    count: 247
+    description: "Comprehensive collection spanning golden age classics to contemporary releases"
+    
+  - name: "Jazz"
+    count: 189
+    description: "Essential recordings from bebop pioneers to modern jazz innovators"
+    
+  - name: "Rock"
+    count: 156
+    description: "Classic rock anthems and underground gems from multiple decades"
+    
+  - name: "Electronic"
+    count: 134
+    description: "Electronic music evolution from early synthesizer work to modern productions"
+    
+  - name: "Soul/R&B"
+    count: 98
+    description: "Timeless soul classics and rhythm and blues essentials"
+    
+  - name: "Reggae"
+    count: 67
+    description: "Authentic Jamaican pressings and international reggae selections"
+
+library_stats:
+  total_records: 891
+  rare_pressings: 127
+  first_pressings: 89
+  established_year: 2018

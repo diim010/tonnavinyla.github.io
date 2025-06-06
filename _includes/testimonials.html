@@ -1,0 +1,16 @@
+<section class="courses-section">
+    <div class="uk-container">
+        <h2 class="uk-text-center" uk-scrollspy="cls: uk-animation-fade; delay: 500;">Our Courses</h2>
+        {% for course in site.data.courses %}
+        <div class="course{% if course.reverse_layout %} course--reverse{% endif %}">
+            <div class="course__pic" uk-scrollspy="cls: {{ course.animation_pic }}; delay: {{ course.delay_pic }};">
+                <img src="{{ '/assets/img/' | append: course.image | relative_url }}" alt="{{ course.alt }}">
+            </div>
+            <div class="course__content" uk-scrollspy="cls: {{ course.animation_content }}; delay: {{ course.delay_content }};">
+                <h3 class="course_content-title">{{ course.title }}</h3>
+                <p class="course__content-text">{{ course.description }}</p>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

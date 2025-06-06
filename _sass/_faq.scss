@@ -1,0 +1,215 @@
+.faq-section {
+    .section-header {
+        h2 {
+            color: #333;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+        
+        .uk-text-lead {
+            color: #666;
+            font-weight: 400;
+        }
+    }
+
+    .faq-content {
+        max-width: 900px;
+        margin: 0 auto;
+        
+        .faq-section-group {
+            .faq-section-title {
+                font-size: 1.5rem;
+                font-weight: 600;
+                color: #1e87f0;
+                margin-bottom: 25px;
+                padding-bottom: 10px;
+                border-bottom: 2px solid #1e87f0;
+                position: relative;
+                
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    width: 60px;
+                    height: 2px;
+                    background-color: #333;
+                }
+            }
+            
+            .faq-accordion {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                
+                .faq-item {
+                    background-color: white;
+                    margin-bottom: 15px;
+                    border-radius: 8px;
+                    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+                    transition: box-shadow 0.3s ease;
+                    
+                    &:hover {
+                        box-shadow: 0 4px 15px rgba(0,0,0,0.12);
+                    }
+                    
+                    .uk-accordion-title {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding: 20px 25px;
+                        background-color: white;
+                        border-radius: 8px;
+                        text-decoration: none;
+                        color: #333;
+                        font-weight: 500;
+                        transition: background-color 0.3s ease, color 0.3s ease;
+                        
+                        &:hover {
+                            background-color: #f8f9fa;
+                            color: #1e87f0;
+                        }
+                        
+                        .faq-question {
+                            flex: 1;
+                            font-size: 1.1rem;
+                            line-height: 1.4;
+                            padding-right: 20px;
+                        }
+                        
+                        .faq-icon {
+                            transition: transform 0.3s ease;
+                            color: #1e87f0;
+                        }
+                    }
+                    
+                    &.uk-open {
+                        .uk-accordion-title {
+                            background-color: #1e87f0;
+                            color: white;
+                            
+                            .faq-icon {
+                                transform: rotate(180deg);
+                                color: white;
+                            }
+                        }
+                    }
+                    
+                    .uk-accordion-content {
+                        .faq-answer {
+                            padding: 0 25px 25px 25px;
+                            
+                            p {
+                                font-size: 1rem;
+                                line-height: 1.7;
+                                color: #555;
+                                margin: 0;
+                                text-align: justify;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .faq-contact-cta {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        padding: 50px 40px;
+        border-radius: 12px;
+        color: white;
+        
+        h3 {
+            color: white;
+            margin-bottom: 15px;
+            font-weight: 600;
+            font-size: 1.75rem;
+        }
+        
+        p {
+            font-size: 1.125rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        
+        .cta-buttons {
+            .uk-button {
+                font-weight: 500;
+                padding: 12px 30px;
+                border-radius: 25px;
+                transition: transform 0.3s ease;
+                
+                &:hover {
+                    transform: translateY(-2px);
+                }
+                
+                &.uk-button-primary {
+                    background-color: white;
+                    color: #667eea;
+                    
+                    &:hover {
+                        background-color: #f8f8f8;
+                    }
+                }
+                
+                &.uk-button-default {
+                    background-color: transparent;
+                    color: white;
+                    border: 2px solid white;
+                    
+                    &:hover {
+                        background-color: white;
+                        color: #667eea;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .faq-section {
+        .faq-content {
+            .faq-section-group {
+                .faq-accordion {
+                    .faq-item {
+                        .uk-accordion-title {
+                            padding: 18px 20px;
+                            
+                            .faq-question {
+                                font-size: 1rem;
+                                padding-right: 15px;
+                            }
+                        }
+                        
+                        .uk-accordion-content {
+                            .faq-answer {
+                                padding: 0 20px 20px 20px;
+                                
+                                p {
+                                    font-size: 0.95rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .faq-contact-cta {
+            padding: 40px 25px;
+            
+            .cta-buttons {
+                .uk-button {
+                    display: block;
+                    width: 100%;
+                    margin-bottom: 10px;
+                    
+                    &.uk-margin-small-right {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}

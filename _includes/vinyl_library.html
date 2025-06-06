@@ -1,0 +1,138 @@
+<section class="vinyl-library-section uk-section">
+    <div class="uk-container">
+        <div class="section-header uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 300;">
+            <h2>Vinyl Library Collection</h2>
+            <p class="uk-text-lead">Discover our curated selection of premium vinyl records spanning multiple genres and decades</p>
+        </div>
+
+        <!-- Library Statistics -->
+        <div class="library-stats uk-grid-small uk-child-width-1-4@m uk-child-width-1-2@s uk-text-center uk-margin-large-bottom" uk-grid uk-scrollspy="cls: uk-animation-slide-bottom-small; target: .stat-item; delay: 100;">
+            <div class="stat-item">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <div class="stat-number">{{ site.data.vinyl_library.library_stats.total_records }}</div>
+                    <div class="stat-label">Total Records</div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <div class="stat-number">{{ site.data.vinyl_library.library_stats.rare_pressings }}</div>
+                    <div class="stat-label">Rare Pressings</div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <div class="stat-number">{{ site.data.vinyl_library.library_stats.first_pressings }}</div>
+                    <div class="stat-label">First Pressings</div>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="uk-card uk-card-default uk-card-body">
+                    <div class="stat-number">{{ site.data.vinyl_library.library_stats.established_year }}</div>
+                    <div class="stat-label">Established</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Genre Collection Overview -->
+        <div class="genre-overview uk-margin-large-bottom">
+            <h3 class="uk-text-center uk-margin-medium-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 500;">Genre Collections</h3>
+            <div class="uk-grid-medium uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid uk-scrollspy="cls: uk-animation-slide-left; target: .genre-card; delay: 200;">
+                {% for genre in site.data.vinyl_library.genres %}
+                <div class="genre-card">
+                    <div class="uk-card uk-card-default uk-card-hover uk-card-body">
+                        <h4 class="uk-card-title">{{ genre.name }}</h4>
+                        <div class="genre-count">{{ genre.count }} Records</div>
+                        <p class="uk-text-small">{{ genre.description }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Vinyl Covers Grid -->
+        <div class="vinyl-grid">
+            <h3 class="uk-text-center uk-margin-medium-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 700;">Featured Albums</h3>
+            <div class="uk-grid-small uk-child-width-1-4@l uk-child-width-1-3@m uk-child-width-1-2@s" uk-grid uk-lightbox="animation: slide" uk-scrollspy="cls: uk-animation-scale-up; target: .vinyl-cover; delay: 150;">
+                {% for album in site.data.vinyl_library.featured_albums %}
+                <div class="vinyl-cover">
+                    <div class="vinyl-cover-wrapper" data-album-id="{{ forloop.index0 }}">
+                        <img src="{{ '/assets/img/vinyl/' | append: album.image | relative_url }}" alt="{{ album.title }} by {{ album.artist }}">
+                        {% if album.rarity == 'high' %}
+                        <div class="rarity-badge rarity-high">Rare</div>
+                        {% elsif album.rarity == 'medium' %}
+                        <div class="rarity-badge rarity-medium">Collectible</div>
+                        {% endif %}
+                        <div class="vinyl-overlay">
+                            <div class="vinyl-overlay-content">
+                                <h4>{{ album.title }}</h4>
+                                <p>{{ album.artist }}</p>
+                                <button class="uk-button uk-button-primary uk-button-small" uk-toggle="target: #vinyl-modal-{{ forloop.index0 }}">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="library-cta uk-text-center uk-margin-large-top" uk-scrollspy="cls: uk-animation-fade; delay: 900;">
+            <h3>Explore Our Complete Collection</h3>
+            <p>Visit our studio to browse the full vinyl library and discover rare pressings available for purchase or listening sessions.</p>
+            <a href="#contact" class="uk-button uk-button-primary uk-button-large" uk-scroll>Visit Our Studio</a>
+        </div>
+    </div>
+
+    <!-- Modal Templates -->
+    {% for album in site.data.vinyl_library.featured_albums %}
+    <div id="vinyl-modal-{{ forloop.index0 }}" class="vinyl-modal" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+            <button class="uk-modal-close-default" type="button" uk-close></button>
+            <div class="uk-grid-collapse uk-child-width-1-2@s" uk-grid>
+                <div class="modal-image-section">
+                    <img src="{{ '/assets/img/vinyl/' | append: album.image | relative_url }}" alt="{{ album.title }} by {{ album.artist }}" class="modal-vinyl-cover">
+                    {% if album.rarity == 'high' %}
+                    <div class="modal-rarity-badge rarity-high">Rare Pressing</div>
+                    {% elsif album.rarity == 'medium' %}
+                    <div class="modal-rarity-badge rarity-medium">Collectible</div>
+                    {% endif %}
+                </div>
+                <div class="modal-content-section">
+                    <div class="modal-album-header">
+                        <h3 class="modal-album-title">{{ album.title }}</h3>
+                        <div class="modal-album-artist">{{ album.artist }}</div>
+                        <div class="modal-album-year">{{ album.year }}</div>
+                    </div>
+                    <div class="modal-album-details">
+                        <div class="detail-group">
+                            <div class="detail-row">
+                                <span class="detail-label">Genre</span>
+                                <span class="detail-value">{{ album.genre }}</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Record Label</span>
+                                <span class="detail-value">{{ album.label }}</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Condition</span>
+                                <span class="detail-value">{{ album.condition }}</span>
+                            </div>
+                            <div class="detail-row">
+                                <span class="detail-label">Price</span>
+                                <span class="detail-value price-highlight">{{ album.price }}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-description">
+                        <p>{{ album.description }}</p>
+                    </div>
+                    <div class="modal-actions">
+                        <button class="uk-button uk-button-primary">Inquire About Purchase</button>
+                        <button class="uk-button uk-button-default">Schedule Listening Session</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</section>

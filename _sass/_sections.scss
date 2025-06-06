@@ -1,0 +1,88 @@
+// Testimonials Section Styles
+.testimonials-section {
+    .testimonial {
+        .testimonial__rating {
+            .uk-icon {
+                width: 16px;
+                height: 16px;
+            }
+        }
+        
+        blockquote {
+            border-left: none;
+            font-style: normal;
+            
+            p {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+        }
+        
+        .testimonial__author {
+            h4 {
+                color: #333;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+// Contact Section Styles
+.contact-section {
+    .contact-info {
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            
+            .uk-icon {
+                color: #1e87f0;
+                margin-top: 2px;
+            }
+        }
+        
+        .social-links {
+            .uk-icon-button {
+                background-color: #1e87f0;
+                color: white;
+                
+                &:hover {
+                    background-color: #0f7ae5;
+                }
+            }
+        }
+    }
+    
+    .studio-hours {
+        .hours-list {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 8px;
+            
+            .hours-item {
+                padding: 8px 0;
+                border-bottom: 1px solid #e5e5e5;
+                
+                &:last-child {
+                    border-bottom: none;
+                }
+                
+                span:first-child {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
+
+// Course Section Updates
+.courses-section {
+    .course--reverse {
+        .course__pic {
+            order: 2;
+        }
+        
+        .course__content {
+            order: 1;
+        }
+    }
+}

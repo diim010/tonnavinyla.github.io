@@ -1,0 +1,23 @@
+address:
+  street: "123 Vinyl Street"
+  city: "Music District"
+  state: "NY"
+  zip: "10001"
+  country: "United States"
+
+phone: "+1 (555) 123-4567"
+email: "info@tonnavinyla.com"
+
+hours:
+  monday: "9:00 AM - 8:00 PM"
+  tuesday: "9:00 AM - 8:00 PM"
+  wednesday: "9:00 AM - 8:00 PM"
+  thursday: "9:00 AM - 8:00 PM"
+  friday: "9:00 AM - 9:00 PM"
+  saturday: "10:00 AM - 6:00 PM"
+  sunday: "12:00 PM - 5:00 PM"
+
+social:
+  facebook: "https://facebook.com/tonnavinyla"
+  instagram: "https://instagram.com/tonnavinyla"
+  twitter: "https://twitter.com/tonnavinyla"

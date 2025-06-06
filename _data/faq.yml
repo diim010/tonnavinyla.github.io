@@ -1,0 +1,53 @@
+sections:
+  - title: "General Information"
+    questions:
+      - question: "What is Tonna Vinyla and what services do you offer?"
+        answer: "Tonna Vinyla is a comprehensive vinyl music education center and record library specializing in professional DJ training, beatmaking instruction, and turntable scratch techniques. We provide hands-on courses taught by industry professionals alongside access to our extensive collection of premium vinyl records spanning multiple genres and decades."
+        
+      - question: "Do I need prior musical experience to enroll in your courses?"
+        answer: "No prior musical experience is required for our introductory programs. Our courses are structured to accommodate students at all skill levels, from complete beginners to advanced practitioners seeking to refine their techniques. Each program includes foundational elements before progressing to more complex concepts."
+        
+      - question: "What makes your vinyl collection unique?"
+        answer: "Our collection features over 890 carefully curated records including 127 rare pressings and 89 first edition releases. We maintain authentic pressings from legendary labels and focus on records that demonstrate technical excellence and historical significance within their respective genres."
+
+  - title: "Course Information"
+    questions:
+      - question: "How long are the individual course programs?"
+        answer: "Course duration varies by program complexity and student goals. Our beatmaking fundamentals course spans eight weeks with two-hour sessions, while the comprehensive DJ program extends twelve weeks including both technical training and performance preparation. Scratch technique workshops are available as four-week intensive programs or ongoing weekly sessions."
+        
+      - question: "What equipment and materials are provided during courses?"
+        answer: "All necessary equipment is provided including professional turntables, mixing consoles, audio interfaces, and headphones. Students receive access to our complete vinyl library during sessions, plus comprehensive course materials and practice recordings. Personal equipment recommendations are provided for home practice continuation."
+        
+      - question: "Are there opportunities for performance and showcasing skills?"
+        answer: "Advanced students participate in monthly showcase events where they demonstrate newly acquired skills before live audiences. We also facilitate connections with local venues and provide guidance for students seeking professional performance opportunities within the regional music scene."
+        
+      - question: "Do you offer private instruction in addition to group classes?"
+        answer: "Private instruction is available for students requiring personalized attention or specialized training in specific techniques. One-on-one sessions can be scheduled to complement group courses or as standalone intensive training programs tailored to individual learning objectives and professional aspirations."
+
+  - title: "Vinyl Library & Records"
+    questions:
+      - question: "Can I purchase records from your vinyl library?"
+        answer: "Selected records from our collection are available for purchase, particularly duplicate pressings and items specifically acquired for retail sale. Rare and first pressing records typically remain within our reference collection, though we occasionally make exceptions for serious collectors through special arrangement."
+        
+      - question: "Do you offer vinyl record appraisal and authentication services?"
+        answer: "We provide professional appraisal services for individual records and complete collections. Our team includes certified experts in vinyl authentication who can verify pressing details, assess condition grades, and provide market valuation reports suitable for insurance and estate planning purposes."
+        
+      - question: "How do you determine record condition and pricing?"
+        answer: "Record condition assessment follows industry-standard Goldmine grading guidelines ranging from Poor to Near Mint conditions. Pricing reflects current market values, rarity factors, and pressing quality. All records undergo thorough visual and audio evaluation before pricing determination and library inclusion."
+        
+      - question: "Can I schedule listening sessions to preview records before purchase?"
+        answer: "Listening sessions can be scheduled during regular studio hours, allowing customers to evaluate records through our high-quality playback systems before making purchase decisions. These sessions also provide opportunities to experience the full sonic characteristics of different pressing qualities and mastering approaches."
+
+  - title: "Scheduling & Logistics"
+    questions:
+      - question: "What are your operating hours and how do I schedule sessions?"
+        answer: "Regular studio hours operate Monday through Friday from 9:00 AM to 8:00 PM, with extended Friday hours until 9:00 PM. Weekend hours are Saturday 10:00 AM to 6:00 PM and Sunday 12:00 PM to 5:00 PM. Course scheduling and listening sessions can be arranged through direct contact or online booking system."
+        
+      - question: "What is your cancellation and rescheduling policy?"
+        answer: "Course sessions can be rescheduled with 24-hour advance notice without penalty. Cancellations made less than 24 hours prior to scheduled sessions incur a partial fee. Private instruction and listening sessions require 48-hour advance notice for changes to avoid cancellation charges."
+        
+      - question: "Do you provide parking and public transportation access?"
+        answer: "On-site parking is available for students and visitors with convenient access to our studio entrance. The location is accessible via multiple public transportation routes including bus lines 12 and 47, with the nearest subway station located three blocks from our facility."
+        
+      - question: "Are your facilities accessible for individuals with mobility requirements?"
+        answer: "Our studio maintains full accessibility compliance including wheelchair-accessible entrances, restroom facilities, and course instruction areas. Specialized equipment arrangements can be made to accommodate individual accessibility needs, and we encourage advance discussion of any specific requirements during enrollment."

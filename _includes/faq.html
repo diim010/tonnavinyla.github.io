@@ -1,0 +1,40 @@
+<section class="faq-section uk-section uk-section-muted">
+    <div class="uk-container">
+        <div class="section-header uk-text-center uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-fade; delay: 300;">
+            <h2>Frequently Asked Questions</h2>
+            <p class="uk-text-lead">Find answers to common questions about our courses, vinyl collection, and studio services</p>
+        </div>
+
+        <div class="faq-content">
+            {% for section in site.data.faq.sections %}
+            <div class="faq-section-group uk-margin-large-bottom" uk-scrollspy="cls: uk-animation-slide-left; delay: 400;">
+                <h3 class="faq-section-title">{{ section.title }}</h3>
+                <ul class="faq-accordion" uk-accordion="multiple: false; animation: true; duration: 300;">
+                    {% for item in section.questions %}
+                    <li class="faq-item">
+                        <a class="uk-accordion-title" href="#">
+                            <span class="faq-question">{{ item.question }}</span>
+                            <span class="faq-icon" uk-icon="icon: chevron-down; ratio: 0.8;"></span>
+                        </a>
+                        <div class="uk-accordion-content">
+                            <div class="faq-answer">
+                                <p>{{ item.answer }}</p>
+                            </div>
+                        </div>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="faq-contact-cta uk-text-center uk-margin-large-top" uk-scrollspy="cls: uk-animation-fade; delay: 600;">
+            <h3>Still Have Questions?</h3>
+            <p>Our team is available to provide additional information about our courses and services.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="uk-button uk-button-primary uk-margin-small-right" uk-scroll>Contact Us</a>
+                <a href="tel:{{ site.data.contact.phone }}" class="uk-button uk-button-default">Call Now</a>
+            </div>
+        </div>
+    </div>
+</section>
