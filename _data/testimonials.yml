@@ -1,14 +1,35 @@
-- name: "Marcus Johnson"
-  role: "Professional DJ"
-  content: "Tonna Vinyla transformed my understanding of vinyl culture. The beatmaking course provided me with the technical foundation I needed to elevate my productions."
+- name: "Sarah Johnson"
+  quote: "The vinyl restoration course completely transformed my approach to collecting. I've learned techniques I never knew existed and my collection has never sounded better."
   rating: 5
+  course: "Vinyl Restoration Workshop"
+  location: "Portland, OR"
 
-- name: "Sarah Chen"
-  role: "Music Producer"
-  content: "The scratch techniques I learned here have become integral to my signature sound. The instructors bring real industry experience to every session."
+- name: "Michael Chen"
+  quote: "As a complete beginner, I was intimidated at first. But the instructors made everything so accessible and fun. Now I'm addicted to vinyl hunting!"
   rating: 5
+  course: "Beginner's Guide to Vinyl"
+  location: "Seattle, WA"
 
-- name: "David Rodriguez"
-  role: "Club DJ"
-  content: "Outstanding comprehensive training program. The DJ course equipped me with both technical skills and business knowledge essential for professional success."
+- name: "Emma Rodriguez"
+  quote: "The studio's vinyl library is incredible. Being able to listen to rare pressings while learning about their history is an experience like no other."
   rating: 5
+  course: "Vinyl History & Appreciation"
+  location: "San Francisco, CA"
+
+- name: "David Thompson"
+  quote: "I've been collecting for 20 years, but I still learned so much from the advanced collecting strategies course. The networking opportunities alone were worth it."
+  rating: 5
+  course: "Advanced Collecting Strategies"
+  location: "Austin, TX"
+
+- name: "Lisa Park"
+  quote: "The hands-on approach really sets this place apart. Working with actual equipment and learning from experienced collectors made all the difference."
+  rating: 5
+  course: "Turntable Setup & Maintenance"
+  location: "Denver, CO"
+
+- name: "James Wilson"
+  quote: "Not only did I learn about vinyl care, but I also discovered so many new artists through their amazing collection. It's like a musical treasure hunt every visit."
+  rating: 5
+  course: "Vinyl Care & Storage"
+  location: "Chicago, IL"

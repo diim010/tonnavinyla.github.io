@@ -1,15 +1,21 @@
 .faq-section {
+    .uk-container {
+        padding: 40px 20px;
+        display: grid;
+        grid-template-columns: .5fr auto;
+        grid-gap: 20px;
+    }
     .section-header {
+        display: flex;
+        align-items: center;
+        justify-content: start;
         h2 {
-            color: #333;
+            font-size: 3rem;
             font-weight: 600;
             margin-bottom: 15px;
+            text-align: left;
         }
         
-        .uk-text-lead {
-            color: #666;
-            font-weight: 400;
-        }
     }
 
     .faq-content {
@@ -43,31 +49,26 @@
                 margin: 0;
                 
                 .faq-item {
-                    background-color: white;
-                    margin-bottom: 15px;
-                    border-radius: 8px;
                     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
                     transition: box-shadow 0.3s ease;
-                    
+                    background-color: #222;
                     &:hover {
                         box-shadow: 0 4px 15px rgba(0,0,0,0.12);
                     }
                     
                     .uk-accordion-title {
                         display: flex;
-                        justify-content: space-between;
+                        justify-content: start;
                         align-items: center;
                         padding: 20px 25px;
-                        background-color: white;
-                        border-radius: 8px;
                         text-decoration: none;
                         color: #333;
                         font-weight: 500;
                         transition: background-color 0.3s ease, color 0.3s ease;
-                        
+                        border-bottom: 1px solid #812509;;
                         &:hover {
                             background-color: #f8f9fa;
-                            color: #1e87f0;
+                            color: #812509;
                         }
                         
                         .faq-question {
@@ -79,13 +80,13 @@
                         
                         .faq-icon {
                             transition: transform 0.3s ease;
-                            color: #1e87f0;
+                            color: #812509;
                         }
                     }
                     
                     &.uk-open {
                         .uk-accordion-title {
-                            background-color: #1e87f0;
+                            background-color: #812509;
                             color: white;
                             
                             .faq-icon {
@@ -212,4 +213,6 @@
             }
         }
     }
+}.uk-accordion>:nth-child(n+2) {
+    margin: 0 !important;
 }

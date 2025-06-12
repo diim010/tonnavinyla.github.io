@@ -1,16 +1,41 @@
-<section class="courses-section">
+<section class="testimonials-section uk-section">
     <div class="uk-container">
-        <h2 class="uk-text-center" uk-scrollspy="cls: uk-animation-fade; delay: 500;">Our Courses</h2>
-        {% for course in site.data.courses %}
-        <div class="course{% if course.reverse_layout %} course--reverse{% endif %}">
-            <div class="course__pic" uk-scrollspy="cls: {{ course.animation_pic }}; delay: {{ course.delay_pic }};">
-                <img src="{{ '/assets/img/' | append: course.image | relative_url }}" alt="{{ course.alt }}">
-            </div>
-            <div class="course__content" uk-scrollspy="cls: {{ course.animation_content }}; delay: {{ course.delay_content }};">
-                <h3 class="course_content-title">{{ course.title }}</h3>
-                <p class="course__content-text">{{ course.description }}</p>
-            </div>
+        <div class="testimonials-header" uk-scrollspy="cls: uk-animation-fade; delay: 300;">
+            <h2>Про нас кажуть</h2>
         </div>
-        {% endfor %}
+
+        <div uk-slider="parallax: true; parallax-start: 100%; parallax-end: 100%;">
+
+            <div class="testimonials-slider uk-slider-items uk-child-width-1-1 uk-child-width-1-2s uk-child-width-1-2m uk-light">
+                {% for testimonial in site.data.testimonials %}
+                <div class="testimonial">
+                    <div class="uk-position-center uk-panel">
+                        <div class="testimonial-content">
+                                <div class="testimonial-stars uk-margin-small-bottom">
+                                    {% for i in (1..testimonial.rating) %}
+                                    <span uk-icon="icon: star; ratio: 0.8" class="star-filled"></span>
+                                    {% endfor %}
+                                </div>
+                                <p class="testimonial-text">
+                                    "{{ testimonial.quote }}"
+                                </p>
+                            </div>
+                            <div class="testimonial-author uk-margin-top">
+                                <div class="author-info">
+                                    <div class="author-name">{{ testimonial.name }}</div>
+                                    <div class="author-course uk-text-muted uk-text-small">{{ testimonial.course }}</div>
+                                    {% if testimonial.location %}
+                                    <div class="author-location uk-text-muted uk-text-small">{{ testimonial.location }}</div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+
+        </div>
     </div>
 </section>
